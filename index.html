@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(0, 0%, 8%);
+      height: 100vh;
+    }
+
+    @font-face {
+      font-family: Inter;
+      src: url(./assets/fonts/Inter-VariableFont.ttf);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .card {
+      font-family: Inter;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 12px;
+      padding: 28px;
+    }
+
+    .profile {
+      text-align: center;
+      margin: 8px;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .name {
+      color: hsl(0, 0%, 100%);
+      font-weight: 400;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .location {
+      margin-top: 8px;
+      color: hsl(75, 94%, 57%);
+      font-weight: 600;
+      font-size: 10px;
+    }
+
+    .about {
+      margin-top: 12px;
+      padding: 8px;
+      color: hsl(0, 0%, 100%);
+      font-size: 10px;
+      font-weight: 200;
+    }
+
+    .social {
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 20%);
+      border-radius: 6px;
+      padding: 10px;
+      text-align: center;
+      margin: 10px 0 0 0;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    .social:hover {
+      color: hsl(0, 0%, 12%);
+      background-color: hsl(75, 94%, 57%); 
+      cursor: pointer;   
+    }
+
+    .social:focus {
+      color: hsl(0, 0%, 12%);
+      background-color: hsl(75, 94%, 57%); 
+      cursor: pointer;       
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card">
+      <div class="profile">
+        <img class="avatar" src="./assets/images/avatar-jessica.jpeg" alt="avatar"/>
+        <div class="name">Jessica Randall</div>
+        <div class="location">London, United Kingdom</div>
+        <p class="about">"Front-end developer and avid reader."</p>
+      </div>
+      <div class="links">
+          <p class="social">Github</p>
+          <p class="social">Frontend Mentor</p>
+          <p class="social">LinkedIn</p>
+          <p class="social">Twitter</p>
+          <p class="social">Instagram</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
